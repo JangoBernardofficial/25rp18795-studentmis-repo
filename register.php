@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration - 25rp18795 STUDENT MIS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>USER REGISTRATION</h1>
-    <form action="process.php" method="POST">
-        <div>
-            <label for="names">Names:</label>
-            <input type="text" id="names" name="names" required>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">USER REGISTRATION</h1>
+                <form action="process.php" method="POST">
+                    <div class="mb-3">
+                        <label for="names" class="form-label">Names:</label>
+                        <input type="text" class="form-control" id="names" name="names" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+                <div class="text-center mt-3">
+                    <a href="index.php" class="btn btn-outline-secondary">Back to Home</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-    <a href="index.php">Back to Home</a>
+    </div>
 </body>
 </html>
